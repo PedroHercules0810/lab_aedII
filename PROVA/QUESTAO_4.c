@@ -15,11 +15,11 @@ int isPerfect(int num) {
 
 int main() {
     printf("Numeros perfeitos entre 1 e 1000:\n");
-
-    for (int i = 2; i <= 1000; i++) {
+    int k = 2000;
+    for (int i = 2; i <= k; i++) {
         if (isPerfect(i)) {
             printf("%d: 1", i);
-            for (int j = 2; j <= i; j++) {
+            for (int j = 2; j < i; j++) {
                 if (i % j == 0) {
                     printf(" + %d", j);
                 }
